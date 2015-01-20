@@ -1,0 +1,60 @@
+package com.javarush.test.level04.lesson06.task03;
+
+/* Сортировка трех чисел
+Ввести с клавиатуры три числа, и вывести их в порядке убывания.
+*/
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class Solution
+{
+    public static void main(String[] args) throws Exception
+    {
+    BufferedReader BufferedReader = new BufferedReader(new InputStreamReader(System.in));
+String a = BufferedReader.readLine();
+String b = BufferedReader.readLine();
+String c = BufferedReader.readLine();
+int E = Integer.parseInt(a);
+int F = Integer.parseInt(b);
+int G = Integer.parseInt(c);
+
+if (E > F) 
+if (E > G)
+System.out.println(E);
+if (F > E) 
+if (F > G)
+System.out.println(F);
+if (G > E) 
+if (G > F)
+System.out.println(G);
+
+//middle
+if (E > F)
+if (E < G)
+System.out.println(E);
+if (E < F)
+if (E > G)
+System.out.println(E);
+
+if (F > E) 
+if (F < G)
+System.out.println(F);
+if (F < E) 
+if (F > G)
+System.out.println(F);
+// минимум
+if (E < F) 
+if (E < G)
+System.out.println(E);
+if (F < E) 
+if (F < G)
+System.out.println(F);
+if (G < E) 
+if (G < F)
+System.out.println(G);
+
+//Напишите тут ваш код
+
+    }
+}
